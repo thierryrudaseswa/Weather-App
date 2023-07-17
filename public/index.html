@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+  
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+   
+    <title>React App</title>
+  </head>
+  <body className="dark_mode ">
+    <link rel="stylesheet" href="index.css">
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <script src="main.js"></script>
+    <script>
+      const modeToggle = document.getElementById('modeToggle');
+      const body = document.body;
+  
+      modeToggle.addEventListener('click',function(){
+        if(body.classList.contains('dark-mode')){
+          body.classList.remove('dark-mode');
+          modeToggle.textContent = "🌙";
+        }else{
+          body.classList.add('dark-mode');
+          modeToggle.textContent = "🎇"
+        }
+      });
+    </script>
+    
+  </body>
+</html>
