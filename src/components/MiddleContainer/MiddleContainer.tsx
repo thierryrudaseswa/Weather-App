@@ -29,6 +29,8 @@ function MiddleContainer() {
     //   (forecast: any) => forecast.EpochDate
     // );
     // const formatedDay = dayjs(epochDates * 1000).format("dddd");
+
+    const daysToShow = window.innerWidth >= 1000 ? 5 : 3;
     return (
       <div
         className="main  flex gap-4
@@ -64,10 +66,11 @@ function MiddleContainer() {
                 <>
                   {data.DailyForecasts.map((item: any, i: number) => (
                     <DailyWeather
-                      day={dayjs(item.Date).format("dddd")}
+                      day={dayjs(item.Date).format("ddd")}
                       icon={item.Day.Icon}
                       temp={item.Temperature.Minimum.Value}
                       key={i}
+                      daysToShow={daysToShow}
                     />
                   ))}
                 </>

@@ -49,7 +49,7 @@ export const RenderBarChart: React.FC = () => {
     );
   } else {
     return (
-      <div className="w-full flex justify-center items-center text-xl font-semibold p-5">
+      <div className="w-full flex justify-center items-center text-xl font-semibold p-5 ">
         Loading...
       </div>
     );

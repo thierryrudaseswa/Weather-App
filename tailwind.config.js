@@ -12,9 +12,9 @@ module.exports = {
         md3:{max : "865px"},
      
         md: { max: "768px" },
-        lg2:{max:"1200"},
-        lg: { max: "1024px" },
-        xl: { max: "1280px" },
+        lg2:{max:"1154"},
+        lg: { max: "1222px" },
+        xl: { max: "1425px" },
       },
 
       colors: {
