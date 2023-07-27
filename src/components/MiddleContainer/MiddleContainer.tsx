@@ -38,30 +38,30 @@ function MiddleContainer() {
       "
       >
         <div className=" relative left    w-3/4">
-          <div className="topleft flex">
+          <div className="topleft flex  w-11/12 pr-3 pl-0">
             <div className="leftpara   flex flex-1 gap-2 items-center p-2">
-              <span className="text-zinc-600 font-bold  b  w-28 flex justify-center cursor-pointer">
+              <span className="text-zinc-600 font-bold  b  w-28 flex justify-start cursor-pointer ">
                 Today
               </span>
-              <span className="text-zinc-600 font-bold cursor-pointer w-28 flex justify-center">
+              <span className="text-zinc-600 font-bold cursor-pointer w-28 flex justify-start">
                 Tomorrow
               </span>
-              <span className="text-zinc-400 font-extrabold cursor-pointer w-28 flex justify-center">
+              <span className="text-zinc-400 font-extrabold cursor-pointer w-28 flex justify-start">
                 Next 7 Days
               </span>
             </div>
-            <div className=" flex flex-1 text-white bg-neutral-900  right-0 items-center  gap-16 rounded-full w-80">
-              <div className="forecast flex  bg-blue-300 w-1/2 rounded-full p-3 items-center  text-zinc-100 justify-center font-semibold cursor-pointer">
+            <div className=" flex w-64 text-white  right-0 items-center  gap-12 rounded-full bg-neutral-700">
+              <div className="forecast flex  bg-blue-300 w-56 rounded-full p-3 items-center  text-zinc-100 justify-center font-semibold cursor-pointer">
                 forecast
               </div>
-              <div className="Air bg-neutral-900 font-semibold cursor-pointer">
+              <div className="Air  font-semibold cursor-pointer w-40 flex justify-end pr-2">
                 Air quality
               </div>
             </div>
           </div>
           <div className="middleleft flex gap-2 m-2 ">
             <MainWeather />
-            <div className="list flex gap-3 sm:overflow-x-scroll">
+            <div className="list flex gap-3 max-w-7xl  ">
               {data !== undefined ? (
                 <>
                   {data.DailyForecasts.map((item: any, i: number) => (
@@ -83,11 +83,11 @@ function MiddleContainer() {
 
         {/* rightside */}
 
-        <div className="right flex-2  p-4 w-80">
+        <div className="right flex-2  p-4 w-80 md2:hidden">
           <div className="topright flex">
             <h1 className="font-bold text-amber-50">Chance of rain</h1>
           </div>
-          <div className="chart flex my-8 
+          <div className="chart flex my-8 md2:hidden
            ">
             <RenderBarChart />
           </div>

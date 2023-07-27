@@ -16,13 +16,9 @@ module.exports = {
         lg: { max: "1222px" },
         xl: { max: "1425px" },
       },
+      
 
-      colors: {
-        primary: {
-          light: "#1c64f2",
-          dark: "#1f2937",
-        },
-      },
+    
     },
   },
   variants: {

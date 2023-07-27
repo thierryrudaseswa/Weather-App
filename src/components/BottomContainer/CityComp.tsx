@@ -20,7 +20,7 @@ const CityComp: React.FC<{
   if (!isError && !isLoading) {
     return (
       <>
-        <div className="cities bg-neutral-900 rounded-3xl my-3">
+        <div className="cities bg-neutral-900 rounded-3xl my-3 ">
           <div className="city flex flex-row  h-28 m-1">
             <div className="capital basis-2/3  m-3 p-3 h-24">
               <h1 className="font-light text-white ">{country}</h1>

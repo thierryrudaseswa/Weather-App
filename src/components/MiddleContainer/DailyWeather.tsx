@@ -22,7 +22,7 @@ const DailyWeather: React.FC<Props> = ({ day, icon, temp, daysToShow }) => {
     <div
       className={`${getClassName()} mx-1 text-white bg-neutral-900 p-2 rounded-3xl justify-center items-center ${
         daysToShow === 5 ? 'sm:w-16' : daysToShow === 3 ? 'sm:w-8' : 'sm:w-16'
-      } sm:p-1 sm:justify-center ${
+      } sm:p-1 sm:justify-center md2:bg-slate-100 ${
         daysToShow === 5 ? 'lg:w-24' : daysToShow === 3 ? 'lg:w-6' : 'lg:w-24'
       } lg:p-1`}
     >

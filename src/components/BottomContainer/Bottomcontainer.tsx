@@ -3,6 +3,7 @@ import GoogleMap from "./MapGoogle";
 import { useQuery } from "@tanstack/react-query";
 import CityComp from "./CityComp";
 import GlobalMap from "../googleMap/GlobalMap1";
+import Explore from "../googleMap/explore";
 
 export const BottomContainer: React.FC = () => {
   return (
@@ -16,16 +17,19 @@ export const BottomContainer: React.FC = () => {
             View Wide 🎇
           </div>
         </div>
-        <div className="googlemap h-full">
+        <div className="googlemap h-full relative">
           <GlobalMap />
+          <div className="absolute bottom-[18%] z-[920] left-10">
+          <Explore/>
+          </div>
         </div>
       </div>
       <div className="rightbottom basis-1/3  h-72 mx-2 ">
         <div className="toprightbottom flex justify-between items-center">
-          <div className="rightrightbottom flex m-2 font-bold items-center w-56 h-12 text-white  cursor-pointer ">
+          <div className="rightrightbottom flex m-2 font-bold items-center w-52 h-12 text-white  cursor-pointer ">
             other large cities
           </div>
-          <div className="show  m-2 font-semibold h-12 flex items-center p-2 text-white cursor-pointer ">
+          <div className="show  m-2 font-semibold h-12 flex items-center p-2 text-white cursor-pointer">
             {" "}
             show All
           </div>

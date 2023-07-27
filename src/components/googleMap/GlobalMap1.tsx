@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+
 import "../../App.css";
 import "leaflet/dist/leaflet.css";
 import {
@@ -39,7 +40,7 @@ const citiesByContinent: { continent: string; cities: MarkerData[] }[] = [
       { geocode: [41.9028, 12.4964], popUp: "Rome - Hello, I am pop up 3" },
       { geocode: [51.5074, -0.1278], popUp: "London - Hello, I am pop up 4" },
       { geocode: [48.2082, 16.3738], popUp: "Vienna - Hello, I am pop up 5" },
-      // Add more cities...
+      
     ],
   },
   {
@@ -82,30 +83,12 @@ const citiesByContinent: { continent: string; cities: MarkerData[] }[] = [
   {
     continent: "America",
     cities: [
-      {
-        geocode: [40.7128, -74.006],
-        popUp: "New York City - Hello, I am pop up 16",
-      },
-      {
-        geocode: [34.0522, -118.2437],
-        popUp: "Los Angeles - Hello, I am pop up 17",
-      },
-      {
-        geocode: [19.4326, -99.1332],
-        popUp: "Mexico City - Hello, I am pop up 18",
-      },
-      {
-        geocode: [43.6532, -79.3832],
-        popUp: "Toronto - Hello, I am pop up 19",
-      },
-      {
-        geocode: [-34.6037, -58.3816],
-        popUp: "Buenos Aires - Hello, I am pop up 20",
-      },
-      // Add more cities...
+      
+     
+    
     ],
   },
-  // Add more continents and cities...
+ 
 ];
 
 async function reverseGeocode(
@@ -193,6 +176,8 @@ export default function GlobalMap() {
   }
 
   return (
+    <div className="relative">
+      
     <MapContainer center={[48.8566, 2.3522]} zoom={13}>
       <TileLayer
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
@@ -215,6 +200,9 @@ export default function GlobalMap() {
           ))
         )}
       </MarkerClusterGroup>
+     
     </MapContainer>
+   
+    </div>
   );
 }

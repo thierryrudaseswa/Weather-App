@@ -46,7 +46,7 @@ function TopContainer() {
   return (
     <div className="main  h-20">
       <div className="main2  flex justify-betweeen  p-2 gap-1 ">
-        <div className="part1 flex flex-1   items-center  px-4 gap-4 p-2">
+        <div className="part1 flex flex-1   items-center  px-4 gap-4 p-2 ">
           <div className="icons flex gap-1 cursor-pointer sm:flex-wrap  ">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -94,8 +94,8 @@ function TopContainer() {
           </div>
         </div>
 
-        <div className="part2 flex items-center  flex-1 p-2">
-          <div className="search flex items-center bg-zinc-900 h-12   p-3 rounded-full w-90 gap-4 md2:w-60 md2:gap-2 md2:p-1 ">
+        <div className="part2 flex items-center  flex-1 p-2 ">
+          <div className="search flex items-center bg-zinc-900 h-12 rounded-full w-full gap-4 md2:w-60 md2:gap-2 md2:p-1  ">
             <button
               onClick={() => {
                 if (loc.length > 0) {
